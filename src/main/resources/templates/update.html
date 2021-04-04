@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/update" method="post">
+    <div class="box">
+        <div>
+            <input type="hidden" name="kontaktID" th:value="${kontakt.kontaktID}">
+            <P>Navn: </P>
+            <input type="text" name="fornavn" th:value="${kontakt.fornavn}">
+            <p> Efternavn: </p>
+            <input type="text" name="efternavn" th:value="${kontakt.efternavn}">
+            <P> Adresse: </P>
+            <input type="text" name="adresse" th:value="${kontakt.adresse}">
+            <p> nummmer: </p>
+            <input type="text" name="husNr" th:value="${kontakt.husNr}">
+            <p> telefon nummer: </p>
+            <input type="text" name="tlfnumb" th:value="${kontakt.tlfnumb}">
+        </div>
+    </div>
+    <div>
+        <input type="submit" value="Opdater">
+    </div>
+
+</body>
+</html>
