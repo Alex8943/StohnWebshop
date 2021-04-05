@@ -9,6 +9,19 @@ public class Contact {
     private int husNr;
     private int tlfnumb;
 
+    public Contact(int kontaktID, String fornavn, String efternavn, String adresse, int husNr, int tlfnumb) {
+        this.kontaktID = kontaktID;
+        this.fornavn = fornavn;
+        this.efternavn = efternavn;
+        this.adresse = adresse;
+        this.husNr = husNr;
+        this.tlfnumb = tlfnumb;
+    }
+
+    public Contact() {
+
+    }
+
     public int getKontaktID() {
         return kontaktID;
     }

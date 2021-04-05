@@ -22,7 +22,7 @@ public class ContactRepository implements ICRUD<Contact> {
     }
 
     @Override
-    public List readAll() {
+    public List<Contact> readAll() {
         String sqlStr = "SELECT * from kontakt";
         RowMapper<Contact> rowMapper = new BeanPropertyRowMapper<>(Contact.class);
         return template.query(sqlStr, rowMapper);

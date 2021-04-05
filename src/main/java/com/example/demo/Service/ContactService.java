@@ -29,7 +29,9 @@ public class ContactService {
 
     public List<Contact> readAll(){
         List<Contact> contacts = new ArrayList<>();
-        contacts.addAll(contactRepository.readAll());
+        for(Contact contact: contactRepository.readAll()){
+            contacts.add(contact);
+        }
         return contacts;
     }
 
